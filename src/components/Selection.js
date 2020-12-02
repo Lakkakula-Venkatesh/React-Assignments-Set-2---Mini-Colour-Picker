@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Child.css";
 
-export default function Selection({ applyColor }) {
-  let [color, setColor] = useState("");
+export default function Selection({ applyColor, background }) {
+  let [color, setColor] = useState(background);
   return (
     <div
       className="fix-box"
